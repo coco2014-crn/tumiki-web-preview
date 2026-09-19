@@ -1,0 +1,515 @@
+/* =========================
+price
+========================= */
+
+.hero {
+  padding: 80px 0;
+}
+
+/* =========================
+price-tabs
+========================= */
+
+.price {
+  background: #f0f0f0;
+  /* background: #fafafa; */
+}
+
+.price-inner {
+  padding: 35px 20px;
+}
+
+/* タイトル */
+.price-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.price-tabs-lead {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+/* ▼ ここが今回のメイン修正 */
+.price-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* スマホ2列固定 */
+  gap: 10px;
+
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* ボタン */
+.price-tabs button {
+  width: 100%; /* ←これ重要（均等幅） */
+
+  padding: 12px 8px;
+  font-size: 14px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  color: #555;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+/* ホバー */
+.price-tabs button:hover {
+  background: #eee;
+}
+
+/* アクティブ */
+.price-tabs button.active {
+  background: #4a90e2;
+  color: #fff;
+  border: 1px solid #4a90e2;
+}
+
+/* =========================
+price-contents
+========================= */
+/* 共通 */
+.price-contents {
+  margin: 20px 0;
+}
+
+.price-box {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.price-box:not([role="tabpanel"]) + .price-box {
+  margin-top: 40px;
+}
+
+.price-tabs[hidden],
+.price-tabs-lead[hidden] {
+  display: none;
+}
+
+.price-box-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* アイコンサイズ調整 */
+.price-box-title i {
+  font-size: 22px;
+  color: #000000;
+}
+
+.price-lead {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.price-note {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.price-cta {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  padding: 14px;
+  background: #06c755; /* LINE色 */
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.price-cta:hover {
+  opacity: 0.7;
+  transform: translateY(-1px);
+}
+
+/* =========================
+ホームページ制作セクション
+========================= */
+.price-section {
+  margin-bottom: 30px;
+}
+
+.price-section h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  border-left: 4px solid #4a90e2;
+  padding-left: 8px;
+}
+
+/* プランカード */
+.plan-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.plan-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+}
+
+.plan-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.plan-price {
+  font-size: 18px;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.plan-desc {
+  font-size: 13px;
+  color: #666;
+}
+
+/* 人気ラベル */
+.popular {
+  border: 2px solid #4a90e2;
+  position: relative;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* リスト */
+.price-list {
+  list-style: none;
+  padding: 0;
+}
+
+.price-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #adadad;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* 制作方法カード */
+
+.method-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.method-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 14px;
+  background: #fff;
+}
+
+.method-card h4 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.method-desc {
+  font-size: 13px;
+  color: #666;
+}
+
+.method-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-top: 6px;
+}
+
+/* チェック */
+.check-list {
+  list-style: none;
+  padding: 0;
+}
+
+.check-list li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.check-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+}
+
+/* =========================
+集客導線設計 用 微調整
+========================= */
+
+/* プラン説明ちょい強調（制作と差別化） */
+#marketing .plan-desc {
+  line-height: 1.6;
+}
+
+/* 導線系はテキスト多くなるから高さ揃え */
+#marketing .plan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 含まれる内容 少し見やすく */
+#marketing .check-list li {
+  line-height: 1.6;
+}
+
+/* オプションも少し余白 */
+#marketing .price-list li {
+  padding: 10px 0;
+}
+
+/* CTAちょい目立たせる */
+#marketing .price-cta {
+  margin-top: 24px;
+}
+
+/* =========================
+業務自動化 用 微調整
+========================= */
+
+#auto .plan-desc {
+  line-height: 1.6;
+}
+
+#auto .plan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#auto .check-list li {
+  line-height: 1.6;
+}
+
+#auto .price-list li {
+  padding: 10px 0;
+}
+
+#auto .price-cta {
+  margin-top: 24px;
+}
+
+
+/* =========================
+動画編集 用 微調整
+========================= */
+
+#video .plan-desc {
+  line-height: 1.6;
+}
+
+#video .plan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#video .check-list li {
+  line-height: 1.6;
+}
+
+#video .price-list li {
+  padding: 10px 0;
+}
+
+#video .price-cta {
+  margin-top: 24px;
+}
+
+/* =========================
+撮影・商品撮影 環境構築サポート用 微調整
+========================= */
+
+#photograph .method-desc {
+  line-height: 1.6;
+}
+
+#photograph .method-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#photograph .check-list li {
+  line-height: 1.6;
+}
+
+#photograph .price-list li {
+  padding: 10px 0;
+}
+
+#photograph .price-cta {
+  margin-top: 24px;
+}
+
+/* =========================
+管理業務 用 微調整
+========================= */
+
+#manage .plan-desc {
+  line-height: 1.6;
+}
+
+#manage .plan-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#manage .check-list li {
+  line-height: 1.6;
+}
+
+#manage .price-list li {
+  padding: 10px 0;
+}
+
+#manage .price-cta {
+  margin-top: 24px;
+}
+
+/* =========================
+コーディング 用 微調整
+========================= */
+
+#coding .check-list li {
+  line-height: 1.6;
+}
+
+#coding .price-list li {
+  padding: 10px 0;
+}
+
+#coding .price-cta {
+  margin-top: 24px;
+}
+
+/* =========================
+バナー制作 用 微調整
+========================= */
+
+#banner .check-list li {
+  line-height: 1.6;
+}
+
+#banner .price-list li {
+  padding: 10px 0;
+}
+
+#banner .price-cta {
+  margin-top: 24px;
+}
+
+/* =========================
+タブレット
+========================= */
+
+@media (min-width: 768px) {
+  .hero {
+    background-position: top 20% center;
+  }
+
+  /* =========================
+price-tabs
+========================= */
+
+  .price-tabs {
+    grid-template-columns: repeat(3, 1fr); /* 3列固定 */
+  }
+
+  .price-tabs button {
+    font-size: 15px;
+    padding: 14px 12px;
+  }
+
+  /* =========================
+price-contents
+========================= */
+
+  .plan-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .method-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+PC
+========================= */
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 120px 0;
+    background-position: top 10% center;
+  }
+
+  /* =========================
+price-tabs
+========================= */
+
+  .price-tabs {
+    grid-template-columns: repeat(5, 1fr); /* 5列固定 */
+  }
+
+  .price-tabs button {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .price-inner {
+  padding: 40px 20px;
+}
+}
+
+.price-cta.contact-cta { background: #087c39; box-sizing: border-box; min-height: 48px; }
+.price-cta.contact-cta:focus-visible { outline: 3px solid #245b97; outline-offset: 4px; }

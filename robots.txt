@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+# HTML pages carry noindex; crawling is allowed so crawlers can read it.

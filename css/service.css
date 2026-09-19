@@ -1,0 +1,493 @@
+/* .service */
+.hero {
+  padding: 80px 0px;
+}
+
+/* =========================
+service intro
+========================= */
+
+.service-intro {
+  padding: 35px 0 0;
+  background: #fafafa;
+}
+
+.intro-text {
+  margin-top: 16px;
+  line-height: 1.9;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* =========================
+service grid
+========================= */
+
+.service-grid-section {
+  padding: 35px 0;
+  background: #fafafa;
+}
+
+.service-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.main-card {
+  border: 2px solid #b9b9b9;
+  /* background: #fffdf7; */
+}
+
+.service-card h3 {
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-card h3 i {
+  font-size: 20px;
+  color: #333;
+}
+
+.service-lead {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #444;
+}
+
+.service-card ul {
+  padding: 0;
+  list-style: none;
+}
+
+.service-card li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.service-card li::before {
+  content: "👉";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.service-link {
+  display: block;
+  width: fit-content;
+  margin: 14px auto 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  opacity: 0.7;
+}
+
+.service-cta {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+}
+
+.service-note {
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* =========================
+strong point
+========================= */
+
+.strong-point {
+  padding: 35px 0;
+  background: #f0f0f0;
+}
+
+.point-list {
+  margin-top: 24px;
+}
+
+.point-item {
+  display: flex;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.point-item:last-child {
+  border-bottom: none;
+}
+
+.point-item span {
+  font-size: 22px;
+  font-weight: bold;
+  min-width: 38px;
+  line-height: 1;
+}
+
+.point-item h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.point-item p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================
+flow
+========================= */
+
+.flow {
+  padding: 35px 0;
+  background: #fafafa;
+}
+
+.flow-list {
+  margin-top: 24px;
+}
+
+.flow-item {
+  text-align: center;
+}
+
+.flow-item span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.flow-item h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.flow-item p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.flow-arrow {
+  text-align: center;
+  font-size: 24px;
+  margin: 14px 0;
+}
+
+/* =========================
+  faq
+========================= */
+
+.faq {
+  padding: 35px 0;
+  background: #f0f0f0;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq-list {
+  margin-top: 24px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+}
+
+/* 質問 */
+.faq-question {
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+  padding: 18px 50px 18px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  cursor: pointer;
+  position: relative;
+}
+
+/* ＋アイコン */
+.faq-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  transition: 0.3s ease;
+}
+
+/* 横線 */
+.faq-icon::before {
+  width: 16px;
+  height: 2px;
+  top: 7px;
+  left: 0;
+}
+
+/* 縦線 */
+.faq-icon::after {
+  width: 2px;
+  height: 16px;
+  top: 0;
+  left: 7px;
+}
+
+/* 開いた時 */
+.faq-item.active .faq-icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-item.active .faq-icon::after {
+  opacity: 0;
+}
+
+/* 回答 */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+  padding: 0 16px 18px;
+  line-height: 1.8;
+}
+
+.faq-answer a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.faq .btn {
+  background: #06c755;
+  display: block;
+  width: fit-content;
+  margin: 26px auto 0;
+}
+
+.faq .cta-note {
+  text-align: center;
+  color: #777;
+}
+
+@media (min-width: 768px) {
+  /* portfolio */
+  .hero {
+    background-position: top 20% center;
+  }
+
+  /* =========================
+service intro
+========================= */
+  .service-intro {
+    padding: 35px 0 30px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 16px auto 0;
+  }
+
+  /* =========================
+service grid
+========================= */
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .service-note {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 24px auto 0;
+  }
+
+  /* =========================
+strong point
+========================= */
+  .strong-point {
+    padding: 35px 0;
+  }
+
+  .point-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .point-item {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  /* =========================
+flow
+========================= */
+
+  .flow {
+    padding: 35px 0;
+  }
+
+  .flow-list {
+    max-width: 620px;
+    margin: 24px auto 0;
+  }
+
+  /* =========================
+  faq
+========================= */
+
+  .faq {
+    padding: 35px 0;
+  }
+
+  .faq-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+    padding: 20px 55px 20px 20px;
+  }
+
+  .faq-answer p {
+    padding: 0 20px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* portfolio */
+  .hero {
+    padding: 120px 0px;
+    background-position: top 10% center;
+  }
+
+  /* =========================
+service intro
+========================= */
+
+  .service-intro {
+    padding: 40px 0 30px;
+  }
+
+  /* =========================
+service grid
+========================= */
+  .service-grid-section {
+    padding-bottom: 60px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .service-card {
+    transition: 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .service-note {
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 28px auto 0;
+  }
+
+  /* =========================
+strong-point
+========================= */
+  .strong-point {
+    padding: 40px 0;
+  }
+
+  /* =========================
+flow
+========================= */
+
+  .flow {
+    padding: 40px 0;
+  }
+  .flow-list {
+    max-width: 700px;
+  }
+
+  /* =========================
+  faq
+========================= */
+
+  .faq {
+    padding: 40px 0;
+  }
+
+  .faq-list {
+    max-width: 900px;
+    margin: 30px auto 0;
+    gap: 24px;
+  }
+
+  .faq-item {
+    transition: 0.3s ease;
+  }
+
+  .faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  }
+}

@@ -1,0 +1,223 @@
+/* portfolio */
+.hero {
+  padding: 80px 0px;
+}
+
+.portfolio-wrapper {
+  background: #f0f0f0;
+  padding: 35px 0;
+}
+
+.filter-group {
+  margin-bottom: 25px; /* 業種との間に余白 */
+  text-align: center;
+}
+
+.filter-title {
+  font-size: 18px; /* ←大きくする */
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap; /* ←これが重要 */
+  gap: 10px;
+}
+
+.filter-buttons button {
+  flex: 1 1 calc(50% - 10px); /* スマホ2列 */
+  padding: 10px 6px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  color: #555;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.filter-buttons button.active {
+  background: #4a90e2;
+  color: #fff;
+  border: 1px solid #4a90e2;
+}
+
+#categoryGroup .filter-title {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+#categoryFilter button {
+  border: 1px solid #ddd;
+  padding: 6px 15px;
+  min-height: unset;
+  font-size: 13px;
+}
+
+#categoryFilter {
+  justify-content: center;
+  gap: 8px;
+}
+
+/* カード */
+.portfolio-page-list {
+  display: flex;
+  flex-wrap: wrap; /* ←最初からこれ */
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-type {
+  font-size: 13px;
+  color: #999;
+}
+
+.card-detail {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.card-note {
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+}
+
+.card-tags {
+  margin-top: 10px;
+}
+
+.card-tags span {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.portfolio-cta {
+  text-align: center;
+}
+
+.portfolio-cta .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cta-note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  /* portfolio */
+  .hero {
+    background-position: top 20% center;
+  }
+
+  .filter-group {
+    text-align: center;
+  }
+
+  .filter-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .filter-buttons {
+    justify-content: center;
+  }
+
+  .filter-buttons button {
+    font-size: 15px;
+    padding: 7px 15px;
+    flex: unset;
+  }
+
+  #categoryGroup .filter-title {
+    font-size: 17px;
+  }
+
+  #categoryFilter button {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+
+  .portfolio-page-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-card {
+    width: calc((100% - 25px) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* portfolio */
+
+  .portfolio-wrapper {
+    padding: 40px 0;
+  }
+
+  .hero {
+    padding: 120px 0px;
+    background-position: top 10% center;
+  }
+
+  .filter-title {
+    font-size: 24px;
+  }
+
+  .filter-buttons button {
+    font-size: 15px;
+    padding: 8px 22px;
+  }
+
+  .portfolio-card {
+    width: calc((100% - 50px) / 3);
+  }
+
+  .cta-note {
+    font-size: 15px;
+  }
+}
+
+.portfolio-intro { line-height: 1.9; margin-bottom: 32px; }
+.portfolio-intro h2 { font-size: 24px; margin-bottom: 12px; }
+.case-label { color: #245b97; font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+.card-detail p { margin-bottom: 12px; }
+.card-detail { font-size: 15px; line-height: 1.9; }
+.portfolio-cta { margin-top: 40px; line-height: 1.9; }
+.portfolio-cta h2 { font-size: 24px; margin-bottom: 16px; }
