@@ -242,7 +242,7 @@ function renderNews() {
        画像未設定時はデフォルト画像 */
     const imagePath = news.image
       ? news.image
-      : "/img/news/news-default.webp";
+      : "img/news/news-default.webp";
 
 
 
