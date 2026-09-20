@@ -1,6 +1,6 @@
 {
-  "name": "TUMIKI WEB.",
-  "short_name": "TUMIKI WEB.",
+  "name": "TUMIKI Web.",
+  "short_name": "TUMIKI Web.",
   "start_url": "../index.html",
   "display": "standalone",
   "background_color": "#ffffff",

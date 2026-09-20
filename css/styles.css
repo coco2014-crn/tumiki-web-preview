@@ -1820,11 +1820,11 @@ footer small {
   .home-page.home-menu-open { overflow: hidden; }
   .home-page.home-menu-open .hamburger { position: fixed; top: 20px; right: 20px; }
 
-  .home-page .hero-description { text-wrap: balance; }
+  .home-page .hero-description { text-wrap: wrap; }
   .home-page .hero-description br { display: none; }
   .home-page .home-price-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
-  .home-page .home-price-card p { text-wrap: balance; }
-  .home-page .home-price-description { display: block; text-wrap: balance; }
+  .home-page .home-price-card p { text-wrap: wrap; }
+  .home-page .home-price-description { display: block; text-wrap: wrap; }
   .home-page .home-price-card p br { display: none; }
 
   /* In document flow: the return control cannot cover text or other controls. */
@@ -1842,7 +1842,7 @@ footer small {
   .home-page .home-section-title,
   .home-page .home-card h3,
   .home-page .home-service-card h3,
-  .home-page .home-related-services h3 { text-wrap: balance; }
+  .home-page .home-related-services h3 { text-wrap: wrap; }
   .home-page .home-problems { padding-block: 48px; }
   .home-page .home-problem-grid { gap: 18px; }
   .home-page .home-problems .home-card { padding-block: 22px; }
@@ -1852,7 +1852,7 @@ footer small {
   .home-page .home-related-services ul { gap: 6px; margin-bottom: 14px; }
   .home-page .home-reasons .home-card { display: block; }
   .home-page .home-reasons .home-card-number { margin-bottom: 8px; }
-  .home-page .home-reasons .home-card p { text-wrap: balance; }
+  .home-page .home-reasons .home-card p { text-wrap: wrap; }
   .home-page .home-faq { padding-bottom: 44px; }
   .home-page .home-contact-cta { padding-block: 64px; }
 }

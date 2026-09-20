@@ -1,7 +1,7 @@
 const newsData = [
     {
     date: "2026-05-27",
-    title: "TUMIKI WEB.のサービス全てココナラに出品しています",
+    title: "TUMIKI Web.のサービス全てココナラに出品しています",
     image: "/img/news/coconala-all.webp",
     url: "https://coconala.com/users/5690625",
   },
@@ -22,14 +22,14 @@ const newsData = [
 
   {
     date: "2026-05-12",
-    title: "TUMIKI WEB.のホームページに【新着情報】ページを開設しました",
+    title: "TUMIKI Web.のホームページに【新着情報】ページを開設しました",
     image: "/img/news/news-default.webp",
     url: "/news.html",
   },
 
   {
     date: "2026-05-08",
-    title: "TUMIKI WEB.のロゴをリニューアルしました",
+    title: "TUMIKI Web.のロゴをリニューアルしました",
     image: "/img/news/logo-change.webp",
     url: "/img/news/logo-change.webp",
   },

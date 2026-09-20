@@ -1,0 +1,23 @@
+/* Phrase-aware wrapping is enabled only after text has been segmented.
+   <wbr> supplies optional phrase boundaries, never forced line breaks.
+   The emergency wrap applies only to a phrase wider than its container. */
+.jp-prose {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+
+/* Preserve the card designs, font sizes and desktop column counts. */
+@media (min-width: 1024px) {
+  .home-page .home-problem-grid .home-card { padding-inline: 18px; }
+}
+
+@media (max-width: 599px) {
+  .home-page .home-section,
+  .home-page .hero { --home-inline: 16px; }
+  .home-page .home-problems .home-card,
+  .home-page .home-service-card { padding-inline: 20px; }
+  .home-page .home-portfolio .portfolio-content { padding-inline: 18px; }
+  .home-page .home-faq .faq-question { padding-left: 20px; padding-right: 48px; }
+  .home-page .home-faq .faq-answer p { padding-inline: 20px; }
+}
