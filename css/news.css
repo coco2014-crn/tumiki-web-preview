@@ -115,7 +115,8 @@ NEWS一覧
 
 .news-card-image img {
   width: 100%;
-aspect-ratio: 4 / 3;
+  /* Override the HTML height attribute and preserve each image's ratio. */
+  height: auto;
   object-fit: contain;
   display: block;
 }
